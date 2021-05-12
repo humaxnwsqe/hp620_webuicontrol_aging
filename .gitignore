@@ -1,7 +1,7 @@
 *.txt
+*.log
 !requirements.txt
 timeControl.py
-geckodriver.log
 
 .pytest_cache
 .vscode
