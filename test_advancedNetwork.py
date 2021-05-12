@@ -116,7 +116,7 @@ class TestAdvancedNetwork():
     # 46 | click | css=.apply > span | 
     self.driver.find_element(By.CSS_SELECTOR, ".apply > span").click()
     # 47 | pause | 5 | 
-    time.sleep(10)
+    time.sleep(15)
     # 48 | click | css=.wrap-form-card:nth-child(7) .el-switch__core | 
     self.driver.find_element(By.CSS_SELECTOR, ".wrap-form-card:nth-child(7) .el-switch__core").click()
     # 49 | pause | 5 | 
@@ -131,4 +131,5 @@ class TestAdvancedNetwork():
     time.sleep(10)
     # 54 | click | css=.apply > span | 
     self.driver.find_element(By.CSS_SELECTOR, ".apply > span").click()
+  
   

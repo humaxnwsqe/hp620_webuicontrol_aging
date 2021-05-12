@@ -99,7 +99,7 @@ class TestInternetSettingChange():
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".apply > span").click()
     # 31 | click | css=.wrap-form-card:nth-child(14) .el-switch__core | 
-    time.sleep(10)
+    time.sleep(15)
     self.driver.find_element(By.CSS_SELECTOR, ".wrap-form-card:nth-child(14) .el-switch__core").click()
     # 32 | click | css=.apply > span | 
     time.sleep(10)
@@ -109,4 +109,3 @@ class TestInternetSettingChange():
 
 
 #pytest.main(['test_internetSettingChange.py'])  
-  

@@ -50,6 +50,7 @@ class TestManageECOMode():
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".eco-dialog-select .el-input__inner").click()
     # 10 | click | xpath=//span[contains(.,'Mode 2: LAN 4 Port 1Gbps & LED Eco Lighting')] | 
+    time.sleep(10)
     self.driver.find_element(By.XPATH, "//span[contains(.,\'Mode 2: LAN 4 Port 1Gbps & LED Eco Lighting\')]").click()
     # 11 | pause | 5 | 
     time.sleep(10)
@@ -59,6 +60,7 @@ class TestManageECOMode():
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".eco-dialog-select .el-input__inner").click()
     # 14 | click | xpath=//span[contains(.,'Mode 3: LAN 4 Port 1Gbps at specific time')] | 
+    time.sleep(10)
     self.driver.find_element(By.XPATH, "//span[contains(.,\'Mode 3: LAN 4 Port 1Gbps at specific time\')]").click()
     # 15 | pause | 5 | 
     time.sleep(10)
@@ -68,6 +70,7 @@ class TestManageECOMode():
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".eco-dialog-select .el-input__inner").click()
     # 18 | click | xpath=//span[contains(.,'Mode 1: LAN 4 Port 1Gbps (Speed limit)')] | 
+    time.sleep(10)
     self.driver.find_element(By.XPATH, "//span[contains(.,\'Mode 1: LAN 4 Port 1Gbps (Speed limit)\')]").click()
     # 19 | pause | 5 | 
     time.sleep(10)
@@ -89,4 +92,4 @@ class TestManageECOMode():
     time.sleep(10)
     # 28 | click | css=.apply > span | 
     self.driver.find_element(By.CSS_SELECTOR, ".apply > span").click()"""
-  
+
