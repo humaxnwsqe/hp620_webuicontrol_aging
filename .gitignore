@@ -1,6 +1,8 @@
 *.txt
 !requirements.txt
+timeControl.py
 
 .pytest_cache
 .vscode
 __pycache__
+venv
