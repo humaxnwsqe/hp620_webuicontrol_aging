@@ -1,6 +1,7 @@
 *.txt
 !requirements.txt
 timeControl.py
+geckkdriver.log
 
 .pytest_cache
 .vscode
