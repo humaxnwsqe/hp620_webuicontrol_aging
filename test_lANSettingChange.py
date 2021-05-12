@@ -25,7 +25,7 @@ stop = False  # Flag to run stopping of all processes.
 maincount = 0 # Attribute to run required process once in function main()
 #event = mp.Event()
 loopCount = 0  # Attribute to run required process once in function event_controller()
-cur_datetime = "" #Current date and time"
+
 
 logging.basicConfig(level=logging.DEBUG) # To print log in case of debugging.
 
@@ -69,16 +69,14 @@ def on_release(key):
 def event_Controller():
     global loopCount
     global delayTime
-    global cur_datetime
+
     pytestpid = 0
 
     while True:
-      
-      #cur_datetime = datetime.datetime.today().strftime("%Y-%m-%d-%a-%H-%M-%S %Z")
-      cur_datetime = datetime.datetime.today().strftime("%c")
+          
+
       print("#####################################################################")
       print("###If you want to stop running pytest code(s), please press 'ESC' key.###")
-      print("Time: %s"%cur_datetime)
       print("#####################################################################")
           
       time.sleep(1)

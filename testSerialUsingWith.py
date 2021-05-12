@@ -15,6 +15,7 @@ filename = 'log_meminfo.txt' # A log file to save command 'meminfo' printed.
 val_baudrate = 115200 # One of option for serial connection
 val_port = 'COM7' # One of option for serial connection
 val_timeout = 1 # One of option for serial connection
+cur_datetime = "" #Current date and time"
 
 #logging.basicConfig(level=logging.DEBUG) # To print log in case of debugging.
 
@@ -40,6 +41,7 @@ if __name__ == '__main__':
         ser.baudrate = val_baudrate
         ser.port = val_port
         ser.timeout = val_timeout
+        
 
         try:
             ser.open()
@@ -57,10 +59,14 @@ if __name__ == '__main__':
         
 
         while ser.readable():
+
+            #cur_datetime = datetime.datetime.today().strftime("%Y-%m-%d-%a-%H-%M-%S %Z")
+            cur_datetime = datetime.datetime.today().strftime("%c")
             
             print("#####################################################################")
             print("###Saving command info printed will be started!")
             print("###If you want to stop saving this, please press'ESC' key.###")
+            print("Time: %s"%cur_datetime)
             print("#####################################################################")
 
             ser.write(b'meminfo\r')
