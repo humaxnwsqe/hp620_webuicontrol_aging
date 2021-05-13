@@ -48,29 +48,37 @@ class TestInternetSettingChange():
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".wrap-form-card:nth-child(8) .el-input__inner").click()
     # 11 | click | xpath=//span[contains(.,'Always Off')] | 
+    time.sleep(10)
     self.driver.find_element(By.XPATH, "//span[contains(.,\'Always Off\')]").click()
     # 12 | click | css=.apply > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".apply > span").click()
     # 13 | click | css=.wrap-form-card:nth-child(8) .el-input__inner | 
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".wrap-form-card:nth-child(8) .el-input__inner").click()
     # 14 | click | xpath=//span[contains(.,'On Demand')] | 
+    time.sleep(10)
     self.driver.find_element(By.XPATH, "//span[contains(.,\'On Demand\')]").click()
     # 15 | click | css=.apply > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".apply > span").click()
     # 16 | click | css=.wrap-form-card:nth-child(9) .el-input__inner | 
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".wrap-form-card:nth-child(9) .el-input__inner").click()
     # 17 | click | xpath=//span[contains(.,'Unencrypted Password (PAP)')] | 
+    time.sleep(10)
     self.driver.find_element(By.XPATH, "//span[contains(.,\'Unencrypted Password (PAP)\')]").click()
     # 18 | click | css=.apply > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".apply > span").click()
     # 19 | click | css=.wrap-form-card:nth-child(9) .el-input__inner | 
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".wrap-form-card:nth-child(9) .el-input__inner").click()
     # 20 | click | xpath=//span[contains(.,'Challenge Handshake Authentication Protocol (CHAP)')] | 
+    time.sleep(10)
     self.driver.find_element(By.XPATH, "//span[contains(.,\'Challenge Handshake Authentication Protocol (CHAP)\')]").click()
     # 21 | click | css=.apply > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".apply > span").click()
     # 22 | click | css=.wrap-form-card:nth-child(9) .el-input__inner | 
     time.sleep(10)
