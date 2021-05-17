@@ -44,6 +44,7 @@ class TestPrimaryWireless():
     # 10 | click | css=.wrap-form-card:nth-child(2) .wrap-custom-select .el-input__inner | 
     self.driver.find_element(By.CSS_SELECTOR, ".wrap-form-card:nth-child(2) .wrap-custom-select .el-input__inner").click()
     # 11 | click | xpath=//span[contains(.,'WPA2/WPA-PSK')] | 
+    time.sleep(10)
     self.driver.find_element(By.XPATH, "//span[contains(.,\'WPA2/WPA-PSK\')]").click()
     # 12 | pause | 10 | 
     time.sleep(20)
