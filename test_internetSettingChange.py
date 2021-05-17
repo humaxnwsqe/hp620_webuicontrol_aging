@@ -23,18 +23,24 @@ class TestInternetSettingChange():
     # Test name: InternetSettingChange
     # Step # | name | target | value
     # 1 | open | http://192.168.0.1 | 
+    time.sleep(10)
     self.driver.get("http://192.168.0.1")
     # 2 | setWindowSize | 1369x752 | 
+    time.sleep(10)
     self.driver.set_window_size(1243, 969)
     # 3 | type | name=input-password-field | 000000
+    time.sleep(10)
     self.driver.find_element(By.NAME, "input-password-field").send_keys("000000")
     # 4 | sendKeys | name=input-password-field | ${KEY_ENTER}
+    time.sleep(10)
     self.driver.find_element(By.NAME, "input-password-field").send_keys(Keys.ENTER)
     # 5 | click | css=.has-child-menu:nth-child(2) > .el-submenu__title | 
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".header-status:nth-child(1) .menu-icon-header").click()
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".has-child-menu:nth-child(2) > .el-submenu__title").click()
     # 6 | click | css=.is-opened > .el-menu span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".is-opened > .el-menu span").click()
     # 7 | click | css=.wrap-form-card:nth-child(8) .el-input__inner | 
     time.sleep(10)
@@ -43,6 +49,7 @@ class TestInternetSettingChange():
     time.sleep(10)
     self.driver.find_element(By.XPATH, "//span[contains(.,\'Always On\')]").click()
     # 9 | click | css=.apply > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".apply > span").click()
     # 10 | click | css=.wrap-form-card:nth-child(8) .el-input__inner | 
     time.sleep(10)

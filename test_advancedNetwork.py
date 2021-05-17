@@ -22,19 +22,25 @@ class TestAdvancedNetwork():
     # Test name: advancedNetwork
     # Step # | name | target | value
     # 1 | open | http://192.168.0.1 | 
+    time.sleep(10)
     self.driver.get("http://192.168.0.1")
     # 2 | setWindowSize | 1243x969 | 
+    time.sleep(10)
     self.driver.set_window_size(1243, 969)
     # 3 | type | name=input-password-field | 000000
+    time.sleep(10)
     self.driver.find_element(By.NAME, "input-password-field").send_keys("000000")
     # 4 | sendKeys | name=input-password-field | ${KEY_ENTER}
+    time.sleep(10)
     self.driver.find_element(By.NAME, "input-password-field").send_keys(Keys.ENTER)
     # 5 | click | css=.header-status:nth-child(1) .menu-icon-header | 
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".header-status:nth-child(1) .menu-icon-header").click()
     # 6 | click | css=.has-child-menu:nth-child(6) > .el-submenu__title | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".has-child-menu:nth-child(6) > .el-submenu__title").click()
     # 7 | click | css=.is-opened .el-menu-item:nth-child(1) > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".is-opened .el-menu-item:nth-child(1) > span").click()
     # 8 | click | css=.wrap-form-card:nth-child(2) .el-switch__core | 
     time.sleep(10)
