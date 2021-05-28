@@ -22,12 +22,16 @@ class TestPrimaryWireless():
     # Test name: primaryWireless
     # Step # | name | target | value
     # 1 | open | http://192.168.0.1 | 
+    time.sleep(10)
     self.driver.get("http://192.168.0.1")
     # 2 | setWindowSize | 1243x969 | 
+    time.sleep(10)
     self.driver.set_window_size(1243, 969)
     # 3 | type | name=input-password-field | 000000
+    time.sleep(10)
     self.driver.find_element(By.NAME, "input-password-field").send_keys("000000")
     # 4 | sendKeys | name=input-password-field | ${KEY_ENTER}
+    time.sleep(10)
     self.driver.find_element(By.NAME, "input-password-field").send_keys(Keys.ENTER)
     # 5 | pause | 10 | 
     time.sleep(20)
@@ -44,6 +48,7 @@ class TestPrimaryWireless():
     # 10 | click | css=.wrap-form-card:nth-child(2) .wrap-custom-select .el-input__inner | 
     self.driver.find_element(By.CSS_SELECTOR, ".wrap-form-card:nth-child(2) .wrap-custom-select .el-input__inner").click()
     # 11 | click | xpath=//span[contains(.,'WPA2/WPA-PSK')] | 
+    time.sleep(10)
     self.driver.find_element(By.XPATH, "//span[contains(.,\'WPA2/WPA-PSK\')]").click()
     # 12 | pause | 10 | 
     time.sleep(20)

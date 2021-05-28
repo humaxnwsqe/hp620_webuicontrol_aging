@@ -23,33 +23,42 @@ class TestSelectingAllMenu():
     # Test name: SelectingAllMenu
     # Step # | name | target | value
     # 1 | open | http://192.168.0.1 | 
+    time.sleep(10)
     self.driver.get("http://192.168.0.1")
     # 2 | setWindowSize | 1243x969 | 
+    time.sleep(10)
     self.driver.set_window_size(1243, 969)
     # 3 | click | name=input-password-field | 
     #self.driver.find_element(By.NAME, "input-password-field").click()
     # 4 | type | name=input-password-field | 000000
+    time.sleep(10)
     self.driver.find_element(By.NAME, "input-password-field").send_keys("000000")
     # 5 | sendKeys | name=input-password-field | ${KEY_ENTER}
+    time.sleep(10)
     self.driver.find_element(By.NAME, "input-password-field").send_keys(Keys.ENTER)
     # 6 | click | css=.header-status:nth-child(1) .menu-icon-header | 
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".header-status:nth-child(1) .menu-icon-header").click()
     # 7 | click | css=.has-child-menu:nth-child(2) > .el-submenu__title > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".has-child-menu:nth-child(2) > .el-submenu__title > span").click()
     # 8 | click | css=.is-opened > .el-menu span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".is-opened > .el-menu span").click()
     # 9 | click | css=.header-status:nth-child(1) .menu-icon-header | 
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".header-status:nth-child(1) .menu-icon-header").click()
     # 10 | click | css=.has-child-menu:nth-child(3) > .el-submenu__title > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".has-child-menu:nth-child(3) > .el-submenu__title > span").click()
     # 11 | click | css=.is-opened .el-menu-item:nth-child(1) > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".is-opened .el-menu-item:nth-child(1) > span").click()
     # 12 | click | css=.header-status:nth-child(1) .menu-icon-header | 
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".header-status:nth-child(1) .menu-icon-header").click()
     # 13 | click | css=.is-active .el-menu-item:nth-child(2) > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".is-active .el-menu-item:nth-child(2) > span").click()
     # 14 | click | css=.header-status:nth-child(1) .menu-icon-header | 
     time.sleep(10)
@@ -65,8 +74,10 @@ class TestSelectingAllMenu():
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".header-status:nth-child(1) .menu-icon-header").click()
     # 19 | click | css=.has-child-menu:nth-child(4) > .el-submenu__title | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".has-child-menu:nth-child(4) > .el-submenu__title").click()
     # 20 | click | css=.is-opened .el-menu-item:nth-child(1) > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".is-opened .el-menu-item:nth-child(1) > span").click()
     # 21 | click | css=.header-status:nth-child(1) .menu-icon-header | 
     time.sleep(10)
@@ -153,6 +164,7 @@ class TestSelectingAllMenu():
     time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".header-status:nth-child(1) .menu-icon-header").click()
     # 55 | click | css=.no-child-menu > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".no-child-menu > span").click()
   
 

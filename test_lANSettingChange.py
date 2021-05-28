@@ -143,21 +143,27 @@ class TestLANSettingChange():
     # 1 | setSpeed | 2000000 | 
     #print("`set speed` is a no-op in code export, use `pause` instead")
     # 2 | open | http://192.168.0.1 | 
+    time.sleep(10)
     self.driver.get("http://192.168.0.1")
     # 3 | setWindowSize | 995x799 | 
+    time.sleep(10)
     self.driver.set_window_size(1243, 969)
     # 4 | click | name=input-password-field | 
     #self.driver.find_element(By.NAME, "input-password-field").click()
     # 5 | type | name=input-password-field | 000000
+    time.sleep(10)
     self.driver.find_element(By.NAME, "input-password-field").send_keys("000000")
     # 6 | sendKeys | name=input-password-field | ${KEY_ENTER}
+    time.sleep(10)
     self.driver.find_element(By.NAME, "input-password-field").send_keys(Keys.ENTER)
     # 7 | click | css=.header-status:nth-child(1) .menu-icon-header | 
     time.sleep(5)
     self.driver.find_element(By.CSS_SELECTOR, ".header-status:nth-child(1) .menu-icon-header").click()
     # 8 | click | css=.has-child-menu:nth-child(4) > .el-submenu__title > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".has-child-menu:nth-child(4) > .el-submenu__title > span").click()
     # 9 | click | css=.is-opened .el-menu-item:nth-child(1) > span | 
+    time.sleep(10)
     self.driver.find_element(By.CSS_SELECTOR, ".is-opened .el-menu-item:nth-child(1) > span").click()
     # 10 | times | 2 |     
           
