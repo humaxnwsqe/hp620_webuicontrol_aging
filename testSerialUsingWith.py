@@ -9,7 +9,7 @@ from multiprocessing import Process, freeze_support
 import sys
 import logging
 
-delayTime = 60 # Unit per measurement is second.
+delayTime = 600 # Unit per measurement is second.
 stop = False # Flag for stopping loop
 filename = 'log_meminfo.txt' # A log file to save command 'meminfo' printed. 
 val_baudrate = 115200 # One of option for serial connection
@@ -22,10 +22,11 @@ cur_datetime = "" #Current date and time"
 
 def onkeypress(event):
     global stop
-    global delayTime
+    #global delayTime
+    waitingTime = 60
     if event.name == 'esc':
         #print("Key 'q' has pressed!")
-        print("You pressed the 'esc' Key. Saving command meminfo printed will be stopped in %d seconds." %delayTime)
+        print("You pressed the 'esc' Key. Saving command meminfo printed will be stopped in %d seconds." %waitingTime)
         stop = True
 
 
