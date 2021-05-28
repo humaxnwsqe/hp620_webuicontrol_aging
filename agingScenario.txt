@@ -1,0 +1,174 @@
+Python files related to the aging scenario are like below: 
+    test_selectingAllMenu.py"
+    test_lANSettingChange.py"
+    test_serviceDMZ.py"
+    test_advancedNetwork.py"          
+    test_internetSettingChange.py"
+    test_manageECOMode.py"
+    test_primaryWireless.py
+
+If you run testlAunder.py, all python files will be executed repeatedly and checking memory information will be printed at meminfo.txt periodically. You can stop this running with 'ESC' key pressing.
+
+<Detailed Scenarios per each python file>
+"test_selectingAllMenu.py"
+ - Visiting all UI pages once.
+  step 1. Open WEB Browser with 192.168.0.1 and log-in WEB UI.
+  step 2. Visit the Internet Setting page.
+  step 3. Visit the Wireless > Basic Setting page.
+  step 4. Visit the Primary Wireless page.
+  step 5. Visit the Secondary Wireless page.
+  step 6. Visit the Mac Access Control page.
+  step 7. Visit the LAN Setting page.
+  step 8. Visit the Reserved IP Address page.
+  step 9. Visit the Packet Filtering page.
+  step 10. Visit the DDNS page.
+  step 11. Visit the Port Forwarding page.
+  step 12. Visit the Port Triggering page.
+  step 13. Visit the DMZ page.
+  step 14. Visit the Network page.
+  step 15. Visit the Routing page.
+  step 16. Visit the UPnP page.
+  step 17. Visit the Diagnostics page.
+  step 18. Visit the Firmware Update page.
+  step 19. Visit the Log Analysis page.
+  step 20. Visit the Factory Reset/Restart page.
+  step 21. Visit the Eco Mode page.
+  step 22. Visit the Change Password page.
+  step 23. Close the WEB Browser. (End) 
+
+"test_lANSettingChange.py"
+ - Changing some configuration in the LAN Setting page and checking its saved well.
+  step 1. Open WEB Browser with 192.168.0.1 and log-in WEB UI.
+  step 2. Visit the LAN Setting page.
+  step 3. Change 'Client Account' value as '100'.
+  step 4. Change 'Lease Time' value as '10'.
+  step 5. Save the changed configuration.
+  step 6. Change 'Client Account' value as '200'.
+  step 7. Change 'Lease Time' value as '20'.
+  step 8. Save the changed configuration again.
+  step 9. Close the WEB Browser. (End) 
+
+"test_serviceDMZ.py"
+ - Changing DMZ option enabled/disabled and checking its saved well. 
+  step 1. Open WEB Browser with 192.168.0.1 and log-in WEB UI.
+  step 2. Visit the DMZ page.
+  step 3. Change 'DMZ' option enabled.
+  step 4. Save the changed configuration.
+  step 5. Change 'DMZ' option disabled.
+  step 6. Save the changed configuration again.
+  step 9. Close the WEB Browser. (End)
+
+"test_advancedNetwork.py"
+ - Changing options in the Network page and checking its saved well.
+  step 1. Open WEB Browser with 192.168.0.1 and log-in WEB UI.
+  step 2. Visit the LAN Setting page.
+  step 3. Change the WAN ICMPv4 Blocking option enabled (or disabled).
+  step 4. Save the changed configuration.
+  step 5. Chagne the WAN ICMPv4 Blocking option disabled (or enabled).
+  step 6. Save the changed configuration.
+  step 7. Change the WAN ICMPv6 Blocking option enabled (or disabled).
+  step 8. Save the changed configuration.
+  step 9. Change the WAN ICMPv6 Blocking option disabled (or enabled).
+  step 10. Save the changed configuration.
+  step 11. Change the IP Spoofing Blocking option enabled (or disabled).
+  step 12. Save the changed configuration.
+  step 13. Change the IP Spoofing Blocking option disabled (or enabled).
+  step 14. Save the changed configuration.
+  step 15. Change the IPSec Passthrough option enabled (or disabled).
+  step 16. Save the changed configuration.
+  step 17. Change the IPSec Passthrough option disabled (or enabled).
+  step 18. Save the changed configuration.
+  step 19. Change the PPTP Passthrough option enabled (or disabled).
+  step 20. Save the changed configuration.
+  step 21. Change the PPTP Passthrough option disabled (or enabled).
+  step 22. Save the changed configuration.
+  step 23. Change the L2TP Passthrough option enabled (or disabled).
+  step 24. Save the changed configuration.
+  step 25. Change the L2TP Passthrough option disabled (or enabled).
+  step 26. Save the changed configuration.
+  step 27. Close the WEB Browser. (End)
+
+"test_internetSettingChange.py"
+ - Changing options in the Internet Setting page and checking its saved well.
+  step 1. Open WEB Browser with 192.168.0.1 and log-in WEB UI.
+  step 2. Visit the Internet Setting page.
+  step 3. Change the Connection Mode option as Always On.
+  step 4. Save the changed configuration.
+  step 5. Change the Connection Mode option as Always Off.
+  step 6. Save the changed configuration.
+  step 7. Chage the Connection Mode option as On Demand.
+  step 8. Save the changed configuration.
+  step 9. Change the Authentication Type option as Unecrypted Password (PAP).
+  step 10. Save the changed configuration.
+  step 11. Change the Authentication Type option as Challenge Handshake Authentication Protocol (CHAP)On.
+  step 12. Save the changed configuration.
+  step 13. Change the Authentication Type option as Auto.
+  step 14. Save the changed configuration.
+  step 15. Change the PPP Keep Alive option enabled (or disabled).
+  step 16. Save the changed configuration.
+  step 17. Change the PPP Keep Alive option diabled (or enabled).
+  step 18. Save the changed configuration.
+  step 19. Change the IPv6 option enabled (or disabled).
+  step 20. Save the changed configuration.
+  step 21. Change the PPPoE Bridge option enabled (or disabled).
+  step 22. Save the changed configuration.
+  step 23. Change the PPPoE Bridge option disabled (or enabled).
+  step 22. Save the changed configuration.
+  step 21. Close the WEB Browser. (End)
+
+"test_manageECOMode.py"
+ - Changing options in the Eco Mode page and checking its saved well.
+  step 1. Open WEB Browser with 192.168.0.1 and log-in WEB UI.
+  step 2. Visit the Eco Mode page.
+  step 3. Change the Eco Mode option enabled.
+  step 4. Save the changed configuration.
+  step 5. Changed the Eco Mode Type option as Mode 2: LAN 4 Port 1Gbps & LED Eco Lighting.
+  step 6. Save the changed configuration.
+  step 7. Changed the Eco Mode Type: Mode 3 option as LAN 4 Port 1Gbps at specific time.
+  step 8. Save the changed configuration.
+  step 7. Changed the Eco Mode Type: Mode 1 option as LAN 4 Port 1Gbps (Speed limit).
+  step 9. Save the changed configuration.
+  step 10. Change the Eco Mode option disabled.
+  step 11. Save the changed configuration.
+  step 12. Close the WEB Browser. (End)
+
+
+"test_primaryWireless.py"
+ - Changing options in the Primary Wireless page and checking its saved well.
+  step 1. Open WEB Browser with 192.168.0.1 and log-in WEB UI.
+  step 2. Visit Primary Wireless page
+  step 3. Change the Security option as WPA2/WPA-PSK.
+  step 4. Save the changed configuration.
+  step 5. Change the Encryption option as AES.
+  step 6. Save the changed configuration.
+  step 7. Change the Encryption option as AES/TKIP.
+  step 8. Save the changed configuration.
+  step 9. Change the Security option as WPA3-SAE.
+  step 10. Save the changed configuration.
+  step 11. Change the Security option as WPA2-PSK.
+  step 12. Save the changed configuration.
+  step 13. Change the Security option as WPA2-PSK/WPA3-SAE Mixed.
+  step 14. Save the chaged configuration.
+  step 15. Change the Security option as None.
+  step 16. Save the changed configuration.
+  step 17. Change the Security option as WPA2-PSK.
+  step 18. Save the changed configuration.
+  step 19. Change the Password value as '00000000'.
+  step 20. Save the changed configuration.
+  step 21. Change the Hide SSID option enabled.
+  step 22. Save the changed configuration.
+  step 23. Change the Hide SSID option disabled.
+  step 24. Save the changed configuration.
+  step 25. Change the Internet Only option enabled.
+  step 26. Save the changed configuration.
+  step 27. Change the Internet Only option disabled.
+  step 28. Save the changed configuration.
+  step 29. Change the AP Isolation option enabled.
+  step 30. Save the changed configuration.
+  step 31. Change the AP Isolation option disabled.
+  step 32. Save the changed configuration.
+  step 33. Change the MAC Access Control option enabled.
+  step 34. Save the changed configuration.
+  step 35. Change the MAC Access Control option disabled.
+  step 36. Save the changed configuration.
+  step 37. Close the WEB Browser. (End)
