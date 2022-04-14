@@ -34,7 +34,7 @@ But this kind of testing is a type of boring and repetitive task for human so so
 - How to use
   - Please execute 'testLaunher.py' using python command like below:
     - python .\testLauncher.py
-    Before running 'testLauncher.py', please make a factory default setting through WEB UI or other ways.
+    - Before running 'testLauncher.py', please make a factory default setting through WEB UI or other ways.
     And then check available serial port information and log in to the serial port using id/pw.
     These python codes are working based on a 'COM7' serial port.
     So if your environment is not using COM7, please change the serial port which your environment is available in the codes.
